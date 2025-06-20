@@ -1,9 +1,6 @@
 public class _11_reverse_string {
     public static void main(String[] args){
 
-        removeVowels();
-    }
-    public static void removeVowels(){
         String st ="welcome";
         for(int i =0;i<st.length();i++){
             char ch =st.charAt(i);
