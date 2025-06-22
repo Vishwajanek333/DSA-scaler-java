@@ -3,13 +3,13 @@ import java.util.*;
 class main{
     public static void main (String [] args){
 
-        // array  with intializing
+        // 1.array  with intializing
         int[]array={1,2,3,4,5};
 
         // length
         System.out.println(array.length);
 
-        //  array  with initiaally array
+        //  1.1array  with initiaally array
         int[] array1= new int [1];
         System.out.println(array1);// print the  array object it not correct
 
@@ -27,7 +27,7 @@ class main{
 
         //  travesal
         for(int i =0;i<array.length;i++){
-            System.out.println(array[i]);
+            System.out.print(array[i]+" ");
         }
 
 

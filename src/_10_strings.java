@@ -1,35 +1,37 @@
 import java .util.*;
 public class _10_strings {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         String s = "vishwa";
-
+        // basic operation of strings:
         //1.print
         System.out.println(s);
 
-        // 2.to get the length
+        // 2.to find  length
         System.out.println(s.length());
 
-        //3.to get
+        //3.to get element
         System.out.println(s.charAt(2));
 
-        // 4.set: directly is not possible but  u can use char
-        // Convert to char array
-        char[] chars = s.toCharArray();
-        chars[2] = 'a';
-        // Convert back to String
-        s = new String(chars);
+        // 4.insert ele
+        char y = 'x';
+        StringBuilder sb = new StringBuilder(s);
+        sb.insert(3, y); // Insert 'X' at index 3
+        s = sb.toString();
+
         System.out.println(s);
 
+
         // 5.search char
-        char ch = 's';
+        char ch = 'w';
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == ch) {
                 System.out.println(i);
             }
         }
-        System.out.println();
 
-        //6.
-
+        // 6.remove char
+        int pos = 5;
+        StringBuilder s1 = new StringBuilder("vishwa"); // or pass existing string variable
+        System.out.println("Output: " + s1.deleteCharAt(1));
     }
 }
