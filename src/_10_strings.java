@@ -18,20 +18,20 @@ public class _10_strings {
         sb.insert(3, y); // Insert 'X' at index 3
         s = sb.toString();
 
-        System.out.println(s);
+        System.out.println("ins car"+s);
 
 
         // 5.search char
         char ch = 'w';
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == ch) {
-                System.out.println(i);
+                System.out.println(" sea char"+i);
             }
         }
 
         // 6.remove char
         int pos = 5;
         StringBuilder s1 = new StringBuilder("vishwa"); // or pass existing string variable
-        System.out.println("Output: " + s1.deleteCharAt(1));
+        System.out.println("del char: " + s1.deleteCharAt(1));
     }
 }
